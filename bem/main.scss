@@ -4,8 +4,6 @@
     font-family: sans-serif;
 }
 
-.produto {} /* bloco */
-
 .produtos {
     max-width: 640px;
     width: 100%;
@@ -14,21 +12,27 @@
     grid-template-columns: 33% 33% 33%;
     grid-column-gap: 1%;
 
-    &-imagem { /* elemento */
+    &__produto {
+    &__imagem {
+        /* elemento */
         width: 100%;
     }
 
-    &-nome { /* elemento */
+    &__nome {
+        /* elemento */
         font-size: 1.2em;
         margin: 8px 0;
     }
 
-    &-descrição { /* elemento */
+    &__descricao {
+        /* elemento */
         color: gray;
     }
+    } /* bloco */
 }
 
-.em-destaque { /* modificador */
+.em--destaque {
+    /* modificador */
     border: 2px solid gold;
     padding: 8px;
     background-color: #ffff42;
